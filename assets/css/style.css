@@ -83,6 +83,8 @@ header {
     }
 }
 
+/* footer */
+
 .social {
     text-align: center;
 }
@@ -96,4 +98,46 @@ header {
     margin: 1%;
     padding: 5%;
     color: #003366;
+}
+
+.social i:hover {
+    color: #34ace0;
+    box-shadow: 0px 0px 10px 2px #0F0;
+}
+
+/* option 2 */
+/* 
+.social i:hover {
+    color: #0F0;
+} */
+
+/* key for button */
+
+.quiz-button {
+    background-color: #1685b8;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.quiz-button:hover {
+    background-color: #34ace0;
+    box-shadow: 0px 0px 10px 2px #0F0;
+}
+
+/* gallery */
+
+#gallery {
+    clear: both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0;
+}
+
+#gallery>img {
+    width: 100%;
 }
