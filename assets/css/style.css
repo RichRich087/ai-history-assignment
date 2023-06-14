@@ -82,3 +82,18 @@ header {
         transform: scale(1.1);
     }
 }
+
+.social {
+    text-align: center;
+}
+
+.social>li {
+    display: inline;
+}
+
+.social i {
+    font-size: 180%;
+    margin: 1%;
+    padding: 5%;
+    color: #003366;
+}
