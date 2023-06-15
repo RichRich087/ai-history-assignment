@@ -1,72 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>AI Quiz</title>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The History of A.I.">
+    <meta name="keywords" content="ai history, ai, progress of ai, ai evolution, ai progress">
 
     <link rel="stylesheet" href="assets/css/style.css">
-
-
+    <title> A.I. Evolution</title>
 </head>
 
-<body class="center-wrapper">
-    <div class="timeline">
-        <ul id="quiz"></ul>
-        
-        <button onclick="nextQuestion()">Next</button>
-        <h2 id="score"></h2>
-    </div>
-    <script>
-        var questions = [
-            {
-                question: 'Who is considered the father of AI?',
-                options: ['Alan Turing', 'John McCarthy', 'Elon Musk', 'Bill Gates'],
-                answer: 'b'
-            },
-            {
-                question: 'During what time period did the AI winter take place?',
-                options: ['1974-1980', '1874-1880', '2010-2013', '1951-1971'],
-                answer: 'a'
-            },
-            {
-                question: 'What was the name of the AI that beat two Jeopardy champions?',
-                options: ['IBM Alan', 'IBM Johnny', 'IBM Snoop Dogg', 'IBM Watson'],
-                answer: 'd'
-            },
-            {
-                question: 'What was the name of the world champion Go player defeated by Google\'s DeepMind?',
-                options: ['Sedol Wang', 'Lee Sedol', 'Paula Murphy', 'Rick Sanchez'],
-                answer: 'b'
+<body>
+    <header>
+        <a href="index.html">
+            <h1>
+                The Evolution of A.I.
+            </h1>
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="quiz.html">Quiz</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="form.html">Newsletter</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="zoom">
+        <div id="image-outer"></div>
+        <div id="image-container"></div>
+    </section>
+
+
+    <section class="center-wrapper">
+        <div class="timeline">
+            <ul id="quiz"></ul>
+
+            <button onclick="nextQuestion()">Next</button>
+            <h2 id="score"></h2>
+        </div>
+        <script>
+            var questions = [
+                {
+                    question: 'Who is considered the father of AI?',
+                    options: ['Alan Turing', 'John McCarthy', 'Elon Musk', 'Bill Gates'],
+                    answer: 'b'
+                },
+                {
+                    question: 'During what time period did the AI winter take place?',
+                    options: ['1974-1980', '1874-1880', '2010-2013', '1951-1971'],
+                    answer: 'a'
+                },
+                {
+                    question: 'What was the name of the AI that beat two Jeopardy champions?',
+                    options: ['IBM Alan', 'IBM Johnny', 'IBM Snoop Dogg', 'IBM Watson'],
+                    answer: 'd'
+                },
+                {
+                    question: 'What was the name of the world champion Go player defeated by Google\'s DeepMind?',
+                    options: ['Sedol Wang', 'Lee Sedol', 'Paula Murphy', 'Rick Sanchez'],
+                    answer: 'b'
+                }
+            ];
+            var currentQuestion = 0;
+            var score = 0;
+
+            function displayQuestion() {
+                var quiz = document.getElementById('quiz');
+                quiz.innerHTML = '';
+                var question = questions[currentQuestion];
+                var li = document.createElement('li');
+                li.innerHTML = '<span>Question ' + (currentQuestion + 1) + '</span><div class="content"><h3>' + question.question + '</h3><p>' + question.options.map(function (option, i) {
+                    return '<input type="radio" name="q' + currentQuestion + '" value="' + String.fromCharCode(97 + i) + '"> ' + option;
+                }).join('<br>') + '</p></div>';
+                quiz.appendChild(li);
             }
-        ];
-        var currentQuestion = 0;
-        var score = 0;
 
-        function displayQuestion() {
-            var quiz = document.getElementById('quiz');
-            quiz.innerHTML = '';
-            var question = questions[currentQuestion];
-            var li = document.createElement('li');
-            li.innerHTML = '<span>Question ' + (currentQuestion + 1) + '</span><div class="content"><h3>' + question.question + '</h3><p>' + question.options.map(function (option, i) {
-                return '<input type="radio" name="q' + currentQuestion + '" value="' + String.fromCharCode(97 + i) + '"> ' + option;
-            }).join('<br>') + '</p></div>';
-            quiz.appendChild(li);
-        }
-
-        function nextQuestion() {
-            var answer = document.querySelector('input[name="q' + currentQuestion + '"]:checked').value;
-            if (answer == questions[currentQuestion].answer) score++;
-            currentQuestion++;
-            if (currentQuestion < questions.length) {
-                displayQuestion();
-            } else {
-                document.getElementById('score').innerHTML = "Your score is " + score;
+            function nextQuestion() {
+                var answer = document.querySelector('input[name="q' + currentQuestion + '"]:checked').value;
+                if (answer == questions[currentQuestion].answer) score++;
+                currentQuestion++;
+                if (currentQuestion < questions.length) {
+                    displayQuestion();
+                } else {
+                    document.getElementById('score').innerHTML = "Your score is " + score;
+                }
             }
-        }
 
-        displayQuestion();
-    </script>
+            displayQuestion();
+        </script>
+    </section>
+
+    <footer>
+        <ul class="social">
+            <li>
+                <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="Visit our Tiktok (new tab)"><i
+                        class="fa-brands fa-tiktok"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter (new tab)"><i
+                        class="fa-brands fa-square-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Visit our YouTube (new tab)"><i
+                        class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li>
+                <a href="https://instagram.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram (new tab)"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/5b1701fba9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
