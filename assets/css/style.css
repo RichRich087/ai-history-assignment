@@ -171,9 +171,13 @@ footer ul.social i:hover {
     box-shadow: 0px 0px 10px 2px #0F0;
 }
 
+div.timeline {
+    margin-bottom: 40px;
+}
+
 #zoom {
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     margin-top: 0;
 }
 
@@ -232,6 +236,10 @@ footer ul.social i:hover {
     width: 100%;
 }
 
+section#gallery {
+    margin-bottom: 40px;
+}
+
 .form-container {
     width: 800px;
     background-color: #072736;
@@ -254,15 +262,54 @@ footer ul.social i:hover {
 }
 
 .form-container form input[type="submit"] {
-    background-color: #34ace0;
+    background-color: #1685b8;
     color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 20px;
     cursor: pointer;
-    transition: background-color .3s;
+    transition: .5s;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .form-container form input[type="submit"]:hover {
-    background-color: #1685b8;
+    background-color: #34ace0;
+    box-shadow: 0px 0px 10px 2px #0F0;
 }
+
+.form-container {
+    margin-bottom: 40px;
+}
+
+
+/* Button from the actual quiz */
+#test-button {
+    background-color: #1685b8;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .5s;
+    /* margin-top: 40px;
+    margin-bottom: 40px; */
+}
+
+#test-button:hover {
+    background-color: #34ace0;
+    box-shadow: 0px 0px 10px 2px #0F0;
+}
+
+#score {
+    font-size: 40px;
+    color: #34ace0;
+    /* margin-top: 40px;
+    margin-bottom: 40px; */
+}
+
 
 @media (max-width:300px) {
 
