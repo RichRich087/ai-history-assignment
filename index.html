@@ -8,8 +8,6 @@
     <meta name="keywords" content="ai history, ai, progress of ai, ai evolution, ai progress">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/timeline.css">
-    
     <title> A.I. Evolution</title>
 </head>
 <body>
@@ -22,152 +20,160 @@
         <nav>
             <ul>
                 <li>
-                    <a href="form.html">Newsletter</a>
-                </li>
-                <li>
-                    <a href="gallery.html">Gallery</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="quiz.html">Quiz</a>
                 </li>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
                 </li>
-                
+                <li>
+                    <a href="form.html">Newsletter</a>
+                </li>
             </ul>
         </nav>
-
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <div class="image-container">
-            <img src='../assets/images/Ai_cover.jpg' alt="A.I. cover">
-        </div>
     </header>
 
-    <br>
-    <br>
-    <br>
-    <br>
-
     <section>
-        <div class="timeline">
-            <ul>
-                <li>
-                    <span>1956</span>
-                    <div class="content">
-                        <h3>The Birth of AI</h3>
-                        <p>
-                            The Dartmouth Conference is widely considered as the birth of AI. John McCarthy, Marvin Minsky, Nathaniel Rochester, and
-                            Claude Shannon proposed that "every aspect of learning or any other feature of intelligence can in principle be so
-                            precisely described that a machine can be made to simulate it."
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span>1966</span>
-                    <div class="content">
-                        <h3>ELIZA</h3>
-                        <p>
-                        Joseph Weizenbaum at MIT developed ELIZA, an early natural language processing computer program that could simulate
-                        conversation by pattern matching and substitution methodology. ELIZA's most famous script, DOCTOR, simulated a
-                        psychotherapist.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span>1968-1970</span>
-                    <div class="content">
-                        <h3>SHRDLU</h3>
-                        <p>
-                            SHRDLU, developed by Terry Winograd at MIT, was a natural language understanding computer program. It could interpret
-                            commands given in natural language to a virtual robot in a small world of blocks.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span>1972</span>
-                    <div class="content">
-                        <h3>MYCIN</h3>
-                        <p>
-                            MYCIN, developed at Stanford University, was an early expert system that used artificial intelligence to identify
-                            bacteria causing severe infections and to recommend antibiotics, their dose, and schedule.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span>1974-1980</span>
-                    <div class="content">
-                        <h3>The AI Winter</h3>
-                        <p>
-                            A period of disappointment in AI research after initial enthusiasm and funding. The promises of AI were not met as
-                            quickly as expected, leading to reduced funding and interest in AI.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span>1986</span>
-                    <div class="content">
-                        <h3>The Revival of Neural Networks</h3>
-                        <p>
-                            The publication of the book "Parallel Distributed Processing" by David Rumelhart, James McClelland, and the PDP Research
-                            Group sparked a resurgence in interest in neural networks and connectionism.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span>1997</span>
-                    <div class="content">
-                        <h3>IBM's Deep Blue</h3>
-                        <p>
-                            IBM's Deep Blue became the first computer chess-playing system to win a chess game against a reigning world chess
-                            champion, Garry Kasparov.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span>2004-2005</span>
-                    <div class="content">
-                        <h3>The DARPA Grand Challenge</h3>
-                        <p>
-                            The U.S. Defense Advanced Research Projects Agency (DARPA) held a driverless car competition, which significantly
-                            advanced research in autonomous vehicles.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span>2011</span>
-                    <div class="content">
-                        <h3>IBM's Watson Wins Jeopardy</h3>
-                        <p>
-                            IBM's Watson, a question-answering system, famously won a game of Jeopardy against two of the show's greatest champions,
-                            demonstrating significant advancements in natural language processing.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span>2016</span>
-                    <div class="content">
-                        <h3>AlphaGo Defeats Go Champion</h3>
-                        <p>
-                            Google's DeepMind developed AlphaGo, a computer program that defeated world champion Go player Lee Sedol. This was a
-                            significant event as Go is a complex game with more possible moves than there are atoms in the universe, requiring more
-                            than just brute force computation to win.
-                        </p>
-                    </div>
-                </li>
-                
-            </ul>
-        </div>
+        <div id="image-outer"></div>
+        <div id="image-container"></div>
     </section>
 
-    <section>
-        <a href="quiz.html">
-            <button class="quiz-button">Test your knowledge!</button>
-        </a>
-    </section>
+    <div class="center-wrapper">
+        <section>
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <span>1956</span>
+                        <div class="content">
+                            <h3>The Birth of AI</h3>
+                            <p>
+                                The Dartmouth Conference is widely considered as the birth of AI. John McCarthy, Marvin Minsky,
+                                Nathaniel Rochester, and
+                                Claude Shannon proposed that "every aspect of learning or any other feature of intelligence can
+                                in principle be so
+                                precisely described that a machine can be made to simulate it."
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>1966</span>
+                        <div class="content">
+                            <h3>ELIZA</h3>
+                            <p>
+                                Joseph Weizenbaum at MIT developed ELIZA, an early natural language processing computer program
+                                that could simulate
+                                conversation by pattern matching and substitution methodology. ELIZA's most famous script,
+                                DOCTOR, simulated a
+                                psychotherapist.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>1968-1970</span>
+                        <div class="content">
+                            <h3>SHRDLU</h3>
+                            <p>
+                                SHRDLU, developed by Terry Winograd at MIT, was a natural language understanding computer
+                                program. It could interpret
+                                commands given in natural language to a virtual robot in a small world of blocks.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>1972</span>
+                        <div class="content">
+                            <h3>MYCIN</h3>
+                            <p>
+                                MYCIN, developed at Stanford University, was an early expert system that used artificial
+                                intelligence to identify
+                                bacteria causing severe infections and to recommend antibiotics, their dose, and schedule.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>1974-1980</span>
+                        <div class="content">
+                            <h3>The AI Winter</h3>
+                            <p>
+                                A period of disappointment in AI research after initial enthusiasm and funding. The promises of
+                                AI were not met as
+                                quickly as expected, leading to reduced funding and interest in AI.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>1986</span>
+                        <div class="content">
+                            <h3>The Revival of Neural Networks</h3>
+                            <p>
+                                The publication of the book "Parallel Distributed Processing" by David Rumelhart, James
+                                McClelland, and the PDP Research
+                                Group sparked a resurgence in interest in neural networks and connectionism.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>1997</span>
+                        <div class="content">
+                            <h3>IBM's Deep Blue</h3>
+                            <p>
+                                IBM's Deep Blue became the first computer chess-playing system to win a chess game against a
+                                reigning world chess
+                                champion, Garry Kasparov.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>2004-2005</span>
+                        <div class="content">
+                            <h3>The DARPA Grand Challenge</h3>
+                            <p>
+                                The U.S. Defense Advanced Research Projects Agency (DARPA) held a driverless car competition,
+                                which significantly
+                                advanced research in autonomous vehicles.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>2011</span>
+                        <div class="content">
+                            <h3>IBM's Watson Wins Jeopardy</h3>
+                            <p>
+                                IBM's Watson, a question-answering system, famously won a game of Jeopardy against two of the
+                                show's greatest champions,
+                                demonstrating significant advancements in natural language processing.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>2016</span>
+                        <div class="content">
+                            <h3>AlphaGo Defeats Go Champion</h3>
+                            <p>
+                                Google's DeepMind developed AlphaGo, a computer program that defeated world champion Go player
+                                Lee Sedol. This was a
+                                significant event as Go is a complex game with more possible moves than there are atoms in the
+                                universe, requiring more
+                                than just brute force computation to win.
+                            </p>
+                        </div>
+                    </li>
+        
+                </ul>
+            </div>
+        </section>
+    </div>
+    
+    <div class="center-wrapper">
+        <section>
+            <a href="quiz.html">
+                <button class="quiz-button">Test your knowledge!</button>
+            </a>
+        </section>
+    </div>
+    
 
     <footer>
         <ul class="social">
