@@ -54,6 +54,7 @@ header nav {
     position: absolute;
     top: 150;
     right: 0;
+    margin-top: 20px;
 }
 
 header nav ul {
@@ -307,8 +308,6 @@ section#gallery {
     font-size: 20px;
     cursor: pointer;
     transition: .5s;
-    /* margin-top: 40px;
-    margin-bottom: 40px; */
 }
 
 #test-button:hover {
@@ -319,8 +318,6 @@ section#gallery {
 #score {
     font-size: 40px;
     color: #34ace0;
-    /* margin-top: 40px;
-    margin-bottom: 40px; */
 }
 
 
