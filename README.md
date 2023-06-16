@@ -1,39 +1,57 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome,
+We have created a state of the art website that is designed to provide valuable insights into the world of AI. At first the user will have access to a interactive timeline to learn some basic information about AI. Building upon this expierence the user can then complete a quiz to make sure he retains the information presented. They can even take a look at the Gallery of AI generated images. Ultimatly the experience is taylored to user who are interested in learning about AI. The aim is to have provided enough value so that they sign up to the newsletter creating a email list of people who are interested in AI. 
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Navigation Bar
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+THe navigation bar includes links to Home, Quiz, Gallery and Newsletter. This allows the user to navigate the site easily and semlessly with this visually appealing navigation bar. This will avoid users having to use the back button.
 
-## Codeanywhere Reminders
+Home Page
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+The home page has a number of interesting features. At first the user is greated with a eye cathing image that zooms in 10%. He is further greated by a interactive timeline that presents key information about the evolution of AI. Below is a visually appealing button to lead the user to a quiz.
 
-`python3 -m http.server`
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+Footer
+Here we have all the social media links availabe of the company. Included are Tiktok, Instagram, Youtube and Twitter.
+This allows the user to connect via the relevant socials.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+Quiz
+This aims to engage the user further by having him test his knowledge and provide an over all plessant stay on the site.
 
-`http_server`
+Gallery
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The gallery has a selection of visually stunning images generated utilizing ai generation in conjunction with high quality prompts. Here we have a large variaty of different types of images created by AI.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+Newsletter
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+A easy to understand sign up form that allows the user to learn more about AI. Information collected are name, email and (optionally) phone and reason of interest.
 
-To log into the Heroku toolbelt CLI:
+Futute ideas
+A interactive game could be created where the user can play against an AI.
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
----
+Testing 
 
-Happy coding!
+Throughout the production cycle extensive testing was implemented. Any major change was visually checked on the website. Over all the expierence was pretty error free. One issue that arose early on was a large gap between the image and the nav elements. At first we tried implementing changes manually and visually checking. However after using the developer tools the issue was quickly resolved and became a intregal part of the rest of the creation process. 
+
+No issues appear to be present. Both the CSS Validator and Jigsaw validator where used.
+
+Deployment
+
+Website has been deployed using github. The instructional videos are not upto date however a quick google helped reveal the missing information.
+
+
+
+
+
+Credits/Content
+Fontawesome
+https://fontawesome.com/
+
+https://alvarotrigo.com/blog/html-css-timelines/ timeline template that was customized to fit in with the code.
+
+Javascript was also taken from the web and only included for job application purposes as grading will not include it.
+
+images where taken from this website where you can see a selection of the best ai art
+https://prompthero.com/ai-prompts
