@@ -26,7 +26,7 @@ h4,
 h5,
 h6,
 nav,
-button {
+a.quiz-button {
     font-family: 'Orbitron', Arial, sans-serif;
     letter-spacing: 0.05em;
 }
@@ -39,7 +39,7 @@ a {
 header {
     background-color: #0077cc;
     color: #ffffff;
-    padding: 60px;
+    padding: 80px;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
@@ -52,7 +52,7 @@ header a h1 {
 
 header nav {
     position: absolute;
-    top: 150;
+    /* top: 150; */
     right: 0;
     margin-top: 20px;
 }
@@ -219,6 +219,10 @@ div.timeline {
     100% {
         transform: scale(1.1);
     }
+}
+
+div.center-wrapper {
+    margin-bottom: 50px;
 }
 
 .quiz-button {
