@@ -2,6 +2,8 @@
 
 We have created a state of the art website that is designed to provide valuable insights into the world of AI. At first the user will have access to a interactive timeline to learn some basic information about AI. Building upon this expierence the user can then complete a quiz to make sure he retains the information presented. They can even take a look at the Gallery of AI generated images. Ultimatly the experience is taylored to user who are interested in learning about AI. The aim is to have provided enough value so that they sign up to the newsletter creating a email list of people who are interested in AI. 
 
+Deployed at: https://richrich087.github.io/ai-history-assignment/index.html
+
 Navigation Bar
 
 THe navigation bar includes links to Home, Quiz, Gallery and Newsletter. This allows the user to navigate the site easily and semlessly with this visually appealing navigation bar. This will avoid users having to use the back button.
