@@ -81,6 +81,12 @@ Website has been deployed using github. The instructional videos are not upto da
 "To deploy a project on GitHub, start by creating a repository on the GitHub website. Next, clone the repository to your local machine using git clone. Add your project files to the cloned directory and navigate to it using the terminal or command prompt. Commit your changes with git add . followed by git commit -m "Your commit message". Finally, push your committed files to the GitHub repository using git push origin master. If you're deploying a website, consider using GitHub Pages by selecting the appropriate branch in your repository's settings. With this, your project becomes accessible and shareable via GitHub."
 
 
+Bugs:
+We had an issue with a big gap at the top of the website. After using developer tools we figured out how to remove it.
+
+Remaining Bugs:
+None.
+
 Credits/Content
 Fontawesome
 https://fontawesome.com/
